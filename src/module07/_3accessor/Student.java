@@ -24,5 +24,6 @@ public class Student
     {
        Student s1 = new Student("Skyler", "skyler@sky.com", 123456);
        System.out.println(s1);
+       System.out.println();
     }
  }
