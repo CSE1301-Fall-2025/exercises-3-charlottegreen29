@@ -2,7 +2,7 @@ package module07._4static;
 
 public class Person 
 {
-   // instance variables 
+   // instance variables
    private String name;
    private String email;
    private String phoneNumber;
