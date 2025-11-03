@@ -2,7 +2,7 @@ package module07._4static;
 
 public class Temperature 
 {
-  private double temperature;
+  private static double temperature;
   public static double maxTemp = 0;
 
   public Temperature(double t)
@@ -12,7 +12,7 @@ public class Temperature
          maxTemp = t;
   }
 
-  public static printMax()
+  public static void printMax()
   {
      System.out.println(temperature);
   }
