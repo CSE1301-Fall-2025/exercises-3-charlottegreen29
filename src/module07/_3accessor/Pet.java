@@ -28,20 +28,40 @@ public class Pet {
         return name;
     }
 
+    public void setName(String newName){
+        name = newName;
+    }
+
     public int getAge(){
         return age;
+    }
+
+    public void setAge(int newAge){
+        age = newAge;
     }
 
     public double getWeight(){
         return weight;
     }
 
+    public void setWeight(double newWeight){
+        weight = newWeight;
+    }
+
     public String getType(){
         return type;
     }
 
+    public void setType(String newType){
+        type = newType;
+    }
+
     public String getBreed(){
         return breed;
+    }
+
+    public void setBreed(String newBreed){
+        breed = newBreed;
     }
 
     public String toString(){
@@ -49,7 +69,7 @@ public class Pet {
     }
 
     public static void main(String[] args){
-        Pet pete = new Pet("Pete", 8, 23.6, "dog", "corgi");
+        Pet pete = new Pet();
         Pet goldie = new Pet("Goldie", 2, 0.4, "fish", "goldfish");
         Pet tabitha = new Pet("Tabitha", 5, 9.2, "cat", "tabby");
         System.out.println(pete);
@@ -57,5 +77,12 @@ public class Pet {
         System.out.println(goldie);
         System.out.println();
         System.out.println(tabitha);
+        System.out.println();
+        pete.setName("Pete");
+        pete.setAge(8);
+        pete.setWeight(23.6);
+        pete.setType("dog");
+        pete.setBreed("corgi");
+        System.out.println(pete);
     }
 }   
