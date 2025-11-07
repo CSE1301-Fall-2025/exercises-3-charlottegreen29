@@ -10,7 +10,7 @@ public class Employee extends Person
    {
       super(theName);
       id = nextId;
-      nextId++;
+      nextId++; //ok i get it every time a new employee is made, their id number is one more than the previous employee made
    }
   
    public int getId() 
@@ -23,5 +23,8 @@ public class Employee extends Person
       Employee emp = new Employee("Dani");
       System.out.println(emp.getName());
       System.out.println(emp.getId());
+      Employee me = new Employee("Charlotte");
+      System.out.println(me.getName());
+      System.out.println(me.getId());
    }
 }
