@@ -4,7 +4,7 @@ public class Greeter
 {
    public String greet()
    {
-      return "Hi";
+      return "Hi!";
    }
    
    public String greet(String who)
@@ -18,5 +18,7 @@ public class Greeter
       System.out.println(g1.greet());
       Greeter g2 = new MeanGreeter();
       System.out.println(g2.greet());
+      Greeter g3 = new SpanishGreeter();
+      System.out.println(g3.greet());
    }
 }
