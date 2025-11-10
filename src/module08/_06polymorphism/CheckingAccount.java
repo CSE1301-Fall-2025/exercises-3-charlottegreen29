@@ -13,11 +13,13 @@ public class CheckingAccount extends Account{
     public double withdraw(double amount){
         if (amount <= getBalance() + 50){
             this.setBalance(getBalance() - amount - overDraftFee);
+            return amount;
         }
         else {
             this.setBalance(0);
+            return this.getBalance(); // this is what prof nuri did
         }
-        return getBalance();
+
     }
 
 
