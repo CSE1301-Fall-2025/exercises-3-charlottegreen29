@@ -31,7 +31,8 @@ public class Movies {
                 String movieName = "";
                 System.out.println("What movie would you like to see a rating for?");
                 movieName = scan.nextLine();
-                if (!movieRatings.get(movieName).equals(null)){
+                Integer rating = movieRatings.get(movieName);
+                if (rating == null){
                     System.out.println("This movie title isn't in the database.");
                 }
                 else {
@@ -43,7 +44,7 @@ public class Movies {
             }
             
 
-        } //okay, it runs but there's still something wrong with it. Maybe I can ask about it at office hous tomorrow
+        } 
 
         scan.close();
 
