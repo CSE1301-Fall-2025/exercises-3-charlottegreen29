@@ -8,7 +8,7 @@ public class Movies {
 
     public static void main(String[] args){
     
-        Map<String, Integer> movieRatings = new HashMap<>();
+        Map<String, Integer> movieRatings = new HashMap<String, Integer>();
 
         Scanner scan = new Scanner(System.in);
     
