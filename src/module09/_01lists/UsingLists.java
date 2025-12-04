@@ -9,7 +9,7 @@ public class UsingLists {
 	public static void main(String[] args) { //from lecture
 
 		//creating an ArrayList and filling it with values (look how you don't need to set a size at the beginning!)
-		List <String> rainbow1 = new ArrayList<>();
+		ArrayList <String> rainbow1 = new ArrayList<>();
 
 		rainbow1.add("Red");
 		rainbow1.add("Orange");
